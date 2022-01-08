@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- External css -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Bootstrap cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <!-- Font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+</head>
+
+<body>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+    
+    <div class="container">
+        <h1 id="title" style="text-align: center;">FORM</h1>
+        <p  style="text-align: center;" id="description" >Survey form built using Html,css and bootstrap</p>
+        <div class="row">
+            <div class="col-sm-4 ">
+                
+               <form id="survey-form" action=""  class="survey-form">
+                <div class="form-group">
+                    <label for="first-name" id="name-label">First name</label><br>
+                    <input class="width" placeholder="Enter your first name" type="text" id="first-name" name="firstname" required><br>
+                     
+                 
+                    <label for="last-name">Last name</label><br>
+                    <input  class="width" placeholder="Enter your last name" type="text" id="last-name" name="lastname" required><br>
+                   
+
+                    <label for="email" id="email-label">Email</label><br>
+                    <input class="width" placeholder="Enter your email" type="email" id="email" required><br>
+
+                    <label for="address">Address</label><br>
+                    <input class="width" type="text" id="address"><br>
+
+                    <label for="pincode">pincode</label><br>
+                    <input class="width" type="number" style="appearance: none; " id="pincode"><br>
+
+                   
+                    <input name="gender" type="radio" value="male" id="male">
+                    <label  for="male">Male</label><br>
+
+                    <input name="gender" value="female" type="radio" id="female">
+                    <label for="female">Female</label>
+
+                    <p>Select any two favourite foods</p>
+                    <label for="pizza"><input type="checkbox" value="pizza" name="food" id="pizza">Pizza</label><br>
+
+
+                    <label for="briyani"><input type="checkbox" name="food" id="briyani"
+                            value="briyani">Briyani</label><br>
+
+
+                    <label for="southindian"><input type="checkbox" value="South Indian Food" name="food"
+                            id="southindian">South Indian Food</label><br>
+
+
+                    <label for="northindian"> <input type="checkbox" value="South Indian Food" name="food"
+                            id="northindian">South Indian Food</label><br>
+
+                    <label for="state">State</label><br>
+                    <input class="width" type="text" name="" id="state"><br>
+
+                    <label for="country">Country</label><br>
+                    <input class="width" type="text" name="" id="country"><br>
+
+                    <textarea class="textarea" placeholder="comments...."  name="" id="comments" cols="30" rows="10"></textarea><br>
+
+
+                    <button class="btn btn-primary"  onclick="foo()" type="submit" id="submit" >submit</button>
+                   
+                </div>
+                </form>
+            </div>
+        
+
+            <div class=" col-md-8 col-lg-8 col-xl-8">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>First name</th>
+                            <th>Last name</th>
+                            <th>Email</th>  
+                            <th>Address</th>
+                            <th>Pin code</th>
+                            <th>Gender</th>
+                            <th>Food</th>
+                            <th>State</th>
+                            <th>Country</th>
+                            <th>Comments</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="first"></td>
+                            <td id="last"></td>
+                            <td id="emai"></td>
+                            <td id="add"></td>
+                            <td id="pin"></td>
+                            <td id="gend"></td>
+                            <td id="fud"></td>
+                            <td id="stat"></td>
+                            <td id="ctry"></td>
+                            <td id="com"></td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+
+</html>
